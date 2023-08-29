@@ -5,10 +5,10 @@ export default function Footer(props) {
       <>
           <footer>
             <ul>
-                {props.listaProps.map((li)=>{
-                    createElement('li', key={index}, li)
-                return li;
-                ;})}
+            {props.listaProps.map( (li,index)=>{
+            createElement('li', {key:index}, li);
+              return li;
+      })}
             </ul>
             <p>&copy; 2021, Vite.js and React</p>
           </footer>
